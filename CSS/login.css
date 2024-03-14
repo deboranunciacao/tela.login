@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+:root{
+   --cor-h1-esquerdo: #77ffc0;
+   --cor-h1-direita:#00ff88;
+   --cor-fundo:#201b2c;
+   --cor-input: #514869;
+   --cor-btn:#00ff88;
+}
+
+
+ .container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color:var(--cor-fundo);
+    justify-content: center;
+    align-items: center;
+
+
+ }
+
+ .login-esquerda{
+   color: var(--cor-h1-esquerdo);
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ .login-esquerda > h1{
+   color: var(--cor-h1-esquerdo);
+   font-size: 3vw;
+ }
+  
+  .login-esquerda{
+   width: 35vw;
+  }
+ .login-direita{
+   color: var(--cor-fundo);
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+ } 
+
+
+ .login-card{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px  35px;
+    background-color: #392a50;
+    border-radius: 20px;
+    box-shadow: 10px 30px 60px;
+
+ }
+
+ .login-card > h1{
+  color: var(--cor-h1-direita);
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+ }
+
+ .textfild{
+   width: 100%;
+   border: none;
+   border-radius: 10px;
+ }
+
+ .textfild > input{
+   background-color: var(--cor-input);
+   color: #f0ffffde;
+   width: 100%I;
+   border: none;
+   border-radius: 10px;
+   padding: 16px;
+   margin: 10px 0px;
+   font-size: 17pt;
+   box-shadow: 0px 10px 40px var(--cor-fundo);
+ }
+
+ .textfild > label {
+   color: #f0ffffde;
+   margin: 10px 8px;
+
+ }
+
+ .textfild > input::placeholder{
+   color: #f0ffff94;
+   
+ }
+
+ .btn-login{
+   background-color: var(--cor-btn);
+   border: none;
+   color: #2b134b;
+   font-weight: 800;
+   letter-spacing: 3px;
+   margin: 8px 8px;
+   outline: none;
+   padding: 10px ;
+   text-transform: uppercase;
+   width: 100%;
+   cursor: pointer;
+   
+ }
+
+ @media only screen and (max-width: 95px){
+   .login-card{
+    width: 80;
+   }
+   
+ }
+
+ @media only screen and (max-width: 600px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .login-esquerda > h1{
+   display: none;
+
+  } 
+
+  .login-esquerda{
+    width: 100%;
+    height: auto;
+
+  }
+
+  .login-direita{
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+  }
+
+ }
